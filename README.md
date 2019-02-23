@@ -3,9 +3,10 @@
 This Ruby web application is built using the following technologies:
 
 - Ruby
-- Roda
-- Docker
-- Picnic CSS
+- Roda (web framework)
+- Docker (deployment)
+- Picnic CSS (CSS framework)
+- Capybara (acceptance testing)
 
 Use it as a starter kit for your web applications and or REST APIs.
 

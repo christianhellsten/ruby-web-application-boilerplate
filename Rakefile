@@ -5,7 +5,7 @@ rescue LoadError
   puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
 
-desc 'Open an irb session preloaded with this library'
+desc 'Open an IRB'
 task :console do
   sh 'irb -I lib -r ./app.rb'
 end
@@ -20,4 +20,9 @@ namespace :assets do
   task :clean do
     system 'rm public/assets/*.{css,js}'
   end
+end
+
+require 'rake/testtask'
+Rake::TestTask.new do |t|
+  t.pattern = "test/**/*_test.rb"
 end

@@ -1,6 +1,12 @@
 require 'roda'
 require 'slim'
 
+if ENV['RACK_ENV'] == 'production'
+  Sass::Plugin.options[:style] = :compressed
+else
+  Slim::Engine.set_options pretty: true
+end
+
 class App < Roda
   # Plugins. See https://github.com/jeremyevans/roda/tree/master/lib/roda/plugins
   plugin :assets, css: 'application.scss', js: 'application.js', js_compressor: :uglifier
