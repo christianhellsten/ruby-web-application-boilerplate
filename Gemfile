@@ -8,12 +8,12 @@ gem 'uglifier', '~> 4'              # JS compressor
 gem 'rake', '> 12'                  # Make for Ruby
 
 group :development do
-  gem 'shotgun', '~> 0.9'           # Code reloading
+  gem "rerun"                       # Code reloading
 end
 
 group :test do
-  gem 'capybara', '~> 3'           # Code reloading
-  gem 'minitest'#, '~> 3'           # Code reloading
+  gem 'capybara', '~> 3'            # Acceptance testing
+  gem 'minitest', '~> 5'            # Unit testing
   #gem 'capybara-webkit'
 end
 

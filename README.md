@@ -24,7 +24,14 @@ Use it as a starter kit for your web applications and or REST APIs.
 
 ```bash
 $ docker build -t roda-boilerplate-dev .
-$ docker run -v $(pwd):/app -p 80:3000 roda-boilerplate-dev
+$ docker run -t -v $(pwd):/app -p 80:3000 roda-boilerplate-dev
+```
+
+### Test
+
+```bash
+$ docker build -f Dockerfile.test -t roda-boilerplate-test .
+$ docker run -v $(pwd):/app roda-boilerplate-test
 ```
 
 ### Production
