@@ -4,7 +4,8 @@ This Ruby web application is built using the following technologies:
 
 - Ruby
 - Roda
-- Docker (deployment)
+- Docker
+- Picnic CSS
 
 Use it as a starter kit for your web applications and or REST APIs.
 
