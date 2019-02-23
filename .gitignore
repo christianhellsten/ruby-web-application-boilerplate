@@ -1,0 +1,6 @@
+.DS_Store
+/log/*.log
+/tmp
+*.swp
+/.sass-cache
+*.css.map

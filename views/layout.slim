@@ -1,0 +1,21 @@
+html lang='en'
+  head
+    link rel="stylesheet" href="https://unpkg.com/picnic" crossorigin="anonymous"
+    script src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"
+    == assets(:css)
+    == assets(:js)
+  body
+    nav
+      a.brand href="/"
+        span Brand
+      input#bmenu.show type="checkbox"
+      label.burger.toggle.pseudo.button for="bmenu"
+        i class="fas fa-bars"
+      .menu
+        a.pseudo.button.icon-help-circled href="/" Home
+    main == yield
+    footer
+      .flex
+        .third Footer
+        .two-third.text-right
+          a href="https://aktagon.com" Built by Aktagon with Docker+Ruby+Roda+Picnic CSS
